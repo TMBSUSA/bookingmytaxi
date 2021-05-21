@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Booking My Taxi</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/moweb.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle mobile-nav" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">BookingMyTaxi.com</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">About us</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">FAQs</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Taxi Sign up</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">My Account</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h1>Book Taxi for anywhere in United Kingdom</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="home-search">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-md-10 col-md-offset-1">
+                	<div class="card">
+                    	<form class="form-horizontal">
+                        <fieldset>
+                        
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn active">
+                            <input type="radio" name="trip" checked><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i> <span>  Single Trip</span>
+                            </label>
+                            <label class="btn">
+                            <input type="radio" name="trip"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> Round Trip</span>
+                            </label>
+                        </div>
+                        <br><br>
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <div class="col-sm-4">
+                          <input id="textinput1" name="textinput" type="text" placeholder="From" class="form-control input-md">
+                          </div>
+                          <div class="col-sm-4">
+                          <input id="textinput2" name="textinput" type="text" placeholder="To" class="form-control input-md">
+                          </div>
+                          <div class="col-sm-4">
+                          <input id="textinput3" name="textinput" type="text" placeholder="Pickup date &amp; time" class="form-control input-md">
+                          </div>
+                        </div>
+                        
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <div class="col-sm-4">
+                          <select id="selectbasic" name="selectbasic" class="form-control">
+                            <option value="0" selected disabled>Select Pessanger</option>
+                            <option value="1">Option one</option>
+                            <option value="2">Option two</option>
+                          </select>
+                          </div>
+                          <div class="col-sm-6">
+                          <input id="textinput" name="textinput" type="text" placeholder="To" class="form-control input-md">
+                          </div>
+                          <div class="col-sm-2">
+                          <button id="singlebutton" name="singlebutton" class="btn btn-block btn-yellow">Search</button>
+                          </div>
+                        </div>
+                        
+                        </fieldset>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="why" class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Why to choose us</h1>
+                    <div class="row features">
+                    	<div class="col-sm-4 card">
+                            <img src="imgs/ic-1.svg" alt=""/> 
+                            <h3>Savings</h3>
+                            <p>Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibus lacus eget blandit. Mauris vitae ultricies metus, at condimentum nulla. Donec quis ornare lacus. Etiam gravida mollis tortor quis porttitor.</p>
+                        </div>
+                    	<div class="col-sm-4 card">
+                            <img src="imgs/ic-2.svg" alt=""/> 
+                            <h3>Comparision</h3>
+                            <p>Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibus lacus eget blandit. Mauris vitae ultricies metus, at condimentum nulla. Donec quis ornare lacus. Etiam gravida mollis tortor quis porttitor.</p>
+                        </div>
+                    	<div class="col-sm-4 card">
+                            <img src="imgs/ic-3.svg" alt=""/> 
+                            <h3>Reliable</h3>
+                            <p>Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibus lacus eget blandit. Mauris vitae ultricies metus, at condimentum nulla. Donec quis ornare lacus. Etiam gravida mollis tortor quis porttitor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="steps" class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <h1>Easy steps to book a taxi for all your need</h1>
+                </div>
+            </div>
+            <div class="row visible-md visible-lg">
+                <div class="col-md-12">
+                    <div class="stepwizard">
+                        <div class="stepwizard-row setup-panel">
+                            <div class="stepwizard-step">
+                                <img src="imgs/step-1.svg" alt=""/>
+                                <p>Log on to www.bookingmytaxi.com</p>
+                            </div>
+                            <div class="stepwizard-step">
+                                <img src="imgs/step-2.svg" alt=""/>
+                                <p>Set From - To Location and Pickup date &amp; time</p>
+                            </div>
+                            <div class="stepwizard-step">
+                                <img src="imgs/step-3.svg" alt=""/>
+                                <p>Compare Pricing from Taxi Providors near you</p>
+                            </div>
+                            <div class="stepwizard-step">
+                                <img src="imgs/step-4.svg" alt=""/>
+                                <p>Pay and Get your ride</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row visible-sm visible-xs small-features">
+                <div class="col-sm-6">
+                    <img src="imgs/step-1.svg" alt=""/>
+                    <p>Log on to www.bookingmytaxi.com</p>
+                </div>
+                <div class="col-sm-6">
+                    <img src="imgs/step-2.svg" alt=""/>
+                    <p>Set From - To Location and Pickup date &amp; time</p>
+                </div>
+                <div class="col-sm-6">
+                    <img src="imgs/step-3.svg" alt=""/>
+                    <p>Compare Pricing from Taxi Providors near you</p>
+                </div>
+                <div class="col-sm-6">
+                    <img src="imgs/step-4.svg" alt=""/>
+                    <p>Pay and Get your ride</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="benefits" class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1>More benefits of BookingMyTaxi.com</h1>
+                    <div class="row" id="benelist">
+                    	<div class="col-sm-6">
+                        	<div class="benefit-1">
+                            	<p>Some text here</p>
+                                <h4>Driven by verified drives</h4>
+                            </div>
+                        </div>
+                    	<div class="col-sm-6">
+                        	<div class="benefit-2">
+                            	<p>Some text here</p>
+                                <h4>Driven by verified drives</h4>
+                            </div>
+                        </div>
+                    	<div class="col-sm-6">
+                        	<div class="benefit-3">
+                            	<p>Some text here</p>
+                                <h4>Driven by verified drives</h4>
+                            </div>
+                        </div>
+                    	<div class="col-sm-6">
+                        	<div class="benefit-4">
+                            	<p>Some text here</p>
+                                <h4>Driven by verified drives</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="footer" class="content-section">
+        <div class="container">
+            <div class="row">
+            	<div class="col-sm-6">
+                	<div class="well">
+                    	<h3>Register Your Taxi Business</h3>
+                        <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget </p>
+                        <a href="#x" class="btn btn-footer">Register Now</a>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                	<ul class="list-unstyled">
+                    	<li><a href="#x">Home</a></li>
+                    	<li><a href="#x">About us</a></li>
+                    	<li><a href="#x">News</a></li>
+                    	<li><a href="#x">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                	<ul class="list-unstyled">
+                    	<li><a href="#x">Support</a></li>
+                    	<li><a href="#x">Terms &amp; Conditions</a></li>
+                    	<li><a href="#x">Privacy Policy</a></li>
+                    	<li><a href="#x">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="credits">
+    	<div class="container">
+        	<div class="row">
+            	<p>© 2016 BOOKMYTAXI.COM</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/moweb.js"></script>
+
+</body>
+
+</html>
